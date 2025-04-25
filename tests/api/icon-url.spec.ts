@@ -16,4 +16,15 @@ test('Test Case 3 - Handle JSON and log Icon URL if exists', async ({ request })
       console.log(`🖼️ Icon URL: https://duckduckgo.com${icon.URL}`);
     }
   }
+
+  for (const topic of relatedTopics) {
+    const topic_debug = topic.Topics;
+
+    if (topic_debug) {
+      if (topic_debug[0].Icon.URL) {
+        console.log(`📚 Topics URL: ${JSON.stringify(topic_debug[0].Icon.URL)}`)
+      }
+    }
+  }
+
 });
