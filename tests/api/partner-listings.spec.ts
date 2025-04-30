@@ -1,8 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-const url = 'https://api.rouseservices.com/partner/listings/';
 const accessTok = '<YourAccessToken>';
-const fullURL = url + 'coop';
+
 export async function fetchData(clientCode, accessToken) {
   const url = `https://api.rouseservices.com/partner/listings/${clientCode}`;
 
